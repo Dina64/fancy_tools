@@ -2,6 +2,7 @@ push()
 {
 	BRANCH=$(git branch)
 	if [[ "$BRANCH" == "master" ]]; then
+		echo "Metre a jour le repo du master"
 		git push origin master
 	fi
 }
