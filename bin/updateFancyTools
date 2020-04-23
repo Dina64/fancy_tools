@@ -1,0 +1,7 @@
+push()
+{
+	BRANCH=$(git branch)
+	if [[ "$BRANCH" == "master" ]]; then
+		git push origin master
+	fi
+}
