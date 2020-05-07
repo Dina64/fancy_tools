@@ -1,5 +1,4 @@
 #!/bin/bash
-source ./fancy_functions.sh
 
 if [[ -d "export PATH=$PATH:~/Documents/PSL/fancy_tools/bin" ]]; then 
 	echo "ce PATH existe deja"
