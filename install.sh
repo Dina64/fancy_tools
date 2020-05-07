@@ -1,9 +1,8 @@
 #!/bin/bash
+source ./fancy_functions.sh
 
 if [[ -d "export PATH=$PATH:~/Documents/PSL/fancy_tools/bin" ]]; then 
 	echo "ce PATH existe deja"
-elif [[ $BRANCH != "master" ]]; then
-	echo "Dirrigez vous dans le branch master !"
 else
 	echo "source ~/Documents/PSL/fancy_tools/.aliases">>~/.bashrc
 	echo "source ~/Documents/PSL/fancy_tools/fancy_functions.sh">>~/.bashrc
@@ -18,4 +17,5 @@ else
 		cp -r ~/Documents/PSL/fancy_tools/install.sh ~/src
 		echo "export PATH=$PATH:~/src">>~/.bashrc
 	fi
+	cp -r ~/Documents/PSL/fancy_tools/bin/updateFancyTools ~/bin
 fi
